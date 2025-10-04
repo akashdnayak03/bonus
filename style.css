@@ -33,9 +33,11 @@ div{
   0%, 100% {
     transform: translateY(0);
     animation-timing-function: ease-out;
+    background-color: brown;
   }
   50% {
     transform: translateY(-400px); 
     animation-timing-function: ease-in; 
+    background-color: aqua;
   }
 }

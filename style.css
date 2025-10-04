@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    background-color: aliceblue;
+}
+
+div{
+    background-color: aqua;
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+      animation: 
+    roll 8s linear infinite,
+    bounce 1s ease-out infinite;
+}
+
+@keyframes roll {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 50px);
+  }
+}
+
+/* Vertical bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-400px); 
+    animation-timing-function: ease-in; 
+  }
+}
